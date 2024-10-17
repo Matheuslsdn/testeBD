@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block conteudo %}
+<form action="salvar.php" method="POST">
+    <div>
+        <label>Nome da fruta</label>
+        <input type="text" name="nome">
+    </div>
+    <div>
+        <label>Quantidade</label>
+        <input type="text" name="quantidade">
+    </div>
+    <div>
+        <label>Estado</label>
+        <input type="text" name="estado">
+    </div>
+    <div>
+        <label>Data</label>
+        <input type="date" name="data">
+    </div>
+    <div>
+        <label>Categoria</label>
+        <select name="categoria">
+
+
+        </select>
+    </div>
+    <div>
+        <label>Preço</label>
+        <input type="number" name="preco">
+    </div>
+    <button type="submit">Salvar</button>
+</form> 
+{%endblock%}
